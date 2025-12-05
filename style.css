@@ -101,3 +101,65 @@ body {
                 inset 0 1px 0 rgba(255, 255, 255, 0.2);
     transition: all 0.4s ease;
 }
+
+
+/* style.css dosyasının en sonuna ekle */
+
+/* Mobil cihazlar için (768px'den küçük ekranlar) */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+        padding: 10px;
+        padding-top: 55%;
+    }
+    
+    #siir {
+        min-height: auto;
+        margin-bottom: 100%;
+        width: 100%;
+    }
+    
+    .referans-container {
+        padding: 0 10px;
+    }
+    
+    .referans-kutu {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto 20px auto;
+    }
+    
+    .referans-kutu h3 {
+        font-size: 1.8rem;
+    }
+    
+    .referans-kutu li {
+        font-size: 0.95rem;
+        padding-left: 5%;
+        line-height: 1.4;
+    }
+}
+
+/* Küçük mobil cihazlar için (480px'den küçük) */
+@media (max-width: 480px) {
+    .referans-kutu {
+        padding: 15px 8px;
+        border-radius: 18px;
+    }
+    
+    .referans-kutu h3 {
+        font-size: 1.6rem;
+        margin-bottom: 20px;
+    }
+    
+    .referans-kutu li {
+        font-size: 0.9rem;
+        padding-left: 3%;
+        margin-bottom: 10px;
+    }
+    
+    .referans-kutu li b {
+        width: 20px;
+        font-size: 1rem;
+    }
+}
